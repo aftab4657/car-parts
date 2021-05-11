@@ -17,10 +17,12 @@
   <link rel="stylesheet" href="<?php echo base_url('assets/css/horizontal-layout/style.css')?>">
   <!-- endinject -->
   <link rel="shortcut icon" href="<?php echo base_url('assets/images/favicon.png')?>" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body>
   <div class="container-scroller">
+  <?php require_once 'SimpleHeader.php'; ?>
     <div class="container-fluid page-body-wrapper full-page-wrapper">
       <div class="main-panel">
         <div class="content-wrapper d-flex align-items-center auth">
