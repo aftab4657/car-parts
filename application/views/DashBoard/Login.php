@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php require_once 'translation/Login.php'; ?>
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -19,7 +19,6 @@
   <link rel="shortcut icon" href="<?php echo base_url('assets/images/favicon.png')?>" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-
 <body>
   <div class="container-scroller">
   <?php require_once 'SimpleHeader.php'; ?>
@@ -32,8 +31,8 @@
                 <div class="brand-logo">
                   <!-- <img src="<?php // echo base_url('assets/images/logo.svg')?>" alt="logo"> -->
                 </div>
-                <h4>Welcome to eSync! let's get started</h4>
-                <h6 class="font-weight-light">Sign in to continue.</h6>
+                <h4><?php echo($mylanguage[0]); ?></h4>
+                <h6 class="font-weight-light"><?php echo($mylanguage[1]); ?></h6>
                 <?php
                  	
                  	if (validation_errors())
@@ -48,13 +47,13 @@
                 ?>
                 <form class="pt-3" method="POST" action="<?php echo base_url('Login/Authenticate')?>">
                   <div class="form-group">
-                    <input type="username" name="username" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                    <input type="username" name="username" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="<?php echo($mylanguage[2]); ?>">
                   </div>
                   <div class="form-group">
-                    <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" name="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="<?php echo($mylanguage[3]); ?>">
                   </div>
                   <div class="mt-3">
-                    <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit">SIGN IN</button>
+                    <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit"><?php echo($mylanguage[4]); ?></button>
                   </div>
                 </form>
               </div>

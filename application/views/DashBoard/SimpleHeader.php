@@ -8,7 +8,6 @@
             <a class="navbar-brand brand-logo-mini" href="<?php echo base_url() ?>"><img src="<?php echo base_url('assets/images/logo-mini.svg')?>" alt="logo"/></a> -->
           </div>
           <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end justify-content-lg-start">
-
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item nav-profile dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
